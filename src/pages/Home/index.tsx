@@ -31,7 +31,7 @@ const Home = (): JSX.Element => {
 
   useEffect(() => {
     async function loadProducts() {
-      const response = await api.get('products') 
+      const pruductsApi = await api.get('products') 
         .then(response => setProducts(response.data))
     }
 
