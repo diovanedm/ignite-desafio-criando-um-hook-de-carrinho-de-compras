@@ -39,7 +39,7 @@ const Home = (): JSX.Element => {
   }, []);
 
   function handleAddProduct(id: number) {
-    const product = products.filter(productId => id === productId.id)
+    const product = products.filter(product => id === product.id)
     addProduct(product[0].id)
   }
 
